@@ -11,9 +11,11 @@
 
     <TextView
 
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
         android:text="@string/streaming_search"
         android:textSize="44sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,61 +25,48 @@
 
     <Button
         android:id="@+id/search_button_home"
-        android:layout_width="300sp"
-        android:layout_height="85sp"
-        android:layout_marginBottom="420dp"
+        android:layout_width="400sp"
+        android:layout_height="120sp"
+        android:layout_marginTop="6dp"
         android:gravity="center"
         android:text="@string/i_know_what_i_want"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.619" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/suggestion_button"
-        android:layout_width="300sp"
-        android:layout_height="85sp"
-        android:layout_marginBottom="13dp"
+        android:layout_width="400sp"
+        android:layout_height="120sp"
+        android:layout_marginTop="6dp"
         android:text="@string/i_d_like_suggestions"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.413" />
+        app:layout_constraintTop_toBottomOf="@+id/search_button_home" />
 
     <Button
         android:id="@+id/random_button"
-        android:layout_width="300sp"
-        android:layout_height="85sp"
-        android:layout_marginBottom="236dp"
+        android:layout_width="400sp"
+        android:layout_height="120sp"
+        android:layout_marginTop="6dp"
         android:gravity="center"
         android:text="@string/random"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.99" />
+        app:layout_constraintTop_toBottomOf="@+id/suggestion_button" />
 
     <Button
         android:id="@+id/history_button"
-        android:layout_width="300sp"
-        android:layout_height="85sp"
-        android:layout_marginTop="104dp"
-        android:layout_marginEnd="4dp"
+        android:layout_width="400sp"
+        android:layout_height="120sp"
+        android:layout_marginTop="6dp"
         android:gravity="center"
         android:text="@string/history"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.817" />
+        app:layout_constraintTop_toBottomOf="@+id/random_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
