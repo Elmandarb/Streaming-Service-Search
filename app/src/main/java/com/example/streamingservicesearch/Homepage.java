@@ -18,6 +18,8 @@ public class Homepage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
+
+        //Button movement functionality
        /*
         randomButton = findViewById(R.id.random_button);
         randomButton.setOnClickListener(new View.OnClickListener() {
