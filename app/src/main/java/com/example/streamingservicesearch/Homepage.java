@@ -1,19 +1,20 @@
 package com.example.streamingservicesearch;
 
 import androidx.appcompat.app.AppCompatActivity;
-/*
+
 import android.content.Intent;
 import android.view.View;
-import android.widget.Button; */
+import android.widget.Button;
 import android.os.Bundle;
 
 
 public class Homepage extends AppCompatActivity {
-   /*
-    private Button randomButton;
+
+    //private Button randomButton;
     private Button searchButton;
-    private Button suggestionButton;
-    private Button historyButton; */
+    //private Button suggestionButton;
+    //private Button historyButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,16 +29,19 @@ public class Homepage extends AppCompatActivity {
                 Intent ranIntent = new Intent(Homepage.this, random.class);
                 startActivity(ranIntent);
             }
-        });
+        });*/
+
         searchButton = findViewById(R.id.search_button);
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent searchIntent = new Intent(Homepage.this, search.class);
+                Intent searchIntent = new Intent(Homepage.this, SearchActivity.class);
                 startActivity(searchIntent);
             }
         });
-        suggestionButton = findViewById(R.id.suggestion_button);
+
+
+        /*suggestionButton = findViewById(R.id.suggestion_button);
         suggestionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,6 +56,6 @@ public class Homepage extends AppCompatActivity {
                 Intent historyIntent = new Intent(Homepage.this, history.class);
                 startActivity(historyIntent);
             }
-        }); */
+        });*/
     }
 }

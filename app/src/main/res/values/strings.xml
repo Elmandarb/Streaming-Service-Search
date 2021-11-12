@@ -15,5 +15,8 @@
     <string name="history">History</string>
     <string name="streaming_search">Streaming Search</string>
 
+    <!-- Strings related to search -->
+    <string name="search_results_text">Movie Title</string>
+    <string name="search_button_text">Search</string>
 
 </resources>

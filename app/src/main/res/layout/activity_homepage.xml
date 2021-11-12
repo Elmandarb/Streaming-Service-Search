@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/search_button_home"
+        android:id="@+id/search_button"
         android:layout_width="400sp"
         android:layout_height="120sp"
         android:layout_marginTop="6dp"
@@ -44,7 +44,7 @@
         android:textSize="27sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_button_home" />
+        app:layout_constraintTop_toBottomOf="@+id/search_button" />
 
     <Button
         android:id="@+id/random_button"
