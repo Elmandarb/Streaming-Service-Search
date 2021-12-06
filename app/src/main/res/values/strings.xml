@@ -18,5 +18,7 @@
     <!-- Strings related to search -->
     <string name="search_results_text">Movie Title</string>
     <string name="search_button_text">Search</string>
+    <string name="watchlist">Watchlist</string>
+    <string name="historytext">History</string>
 
 </resources>

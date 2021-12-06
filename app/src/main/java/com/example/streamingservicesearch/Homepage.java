@@ -10,10 +10,10 @@ import android.os.Bundle;
 
 public class Homepage extends AppCompatActivity {
 
-    //private Button randomButton;
+    private Button randomButton;
     private Button searchButton;
     //private Button suggestionButton;
-    //private Button historyButton;
+    private Button historyButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,15 +21,15 @@ public class Homepage extends AppCompatActivity {
         setContentView(R.layout.activity_homepage);
 
         //Button movement functionality
-       /*
+
         randomButton = findViewById(R.id.random_button);
         randomButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent ranIntent = new Intent(Homepage.this, random.class);
+                Intent ranIntent = new Intent(Homepage.this, Random.class);
                 startActivity(ranIntent);
             }
-        });*/
+        });
 
         searchButton = findViewById(R.id.search_button);
         searchButton.setOnClickListener(new View.OnClickListener() {
@@ -49,13 +49,14 @@ public class Homepage extends AppCompatActivity {
                 startActivity(sugIntent);
             }
         });
+        */
         historyButton = findViewById(R.id.history_button);
         historyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent historyIntent = new Intent(Homepage.this, history.class);
+                Intent historyIntent = new Intent(Homepage.this, History.class);
                 startActivity(historyIntent);
             }
-        });*/
+        });
     }
 }
