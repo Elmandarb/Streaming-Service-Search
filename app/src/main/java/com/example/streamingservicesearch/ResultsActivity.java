@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.List;
-
+import com.example.streamingservicesearch.MovieModel;
 import com.example.streamingservicesearch.MovieSearchAsyncTask;
 
 public class ResultsActivity extends AppCompatActivity {
@@ -39,8 +39,8 @@ public class ResultsActivity extends AppCompatActivity {
                 searchResultsText.setText(response.getTitle());
                 movieDescription.setText(response.getDescription());
             }
-            task.execute(SEARCH_KEY); //How do I give my MovieSearchAsyncTask the name?
         });
+        task.execute(SEARCH_KEY); //How do I give my MovieSearchAsyncTask the name?
 
         Button returnButton = findViewById(R.id.return_button);
         returnButton.setOnClickListener(new View.OnClickListener() {

@@ -26,6 +26,7 @@ public class SearchActivity extends AppCompatActivity {
         navigateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String name = searchEditText.getText().toString();
                 Intent intent = new Intent(SearchActivity.this, ResultsActivity.class);
                 intent.putExtra(ResultsActivity.SEARCH_KEY, name);

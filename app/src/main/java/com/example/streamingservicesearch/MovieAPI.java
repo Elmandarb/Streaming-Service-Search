@@ -8,8 +8,8 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 public class MovieAPI {
-    private static final String baseApiUrl = "https://streaming-availability.p.rapidapi.com/search/basic?country=us&service=netflix&type=movie&output_language=en"; //Just searching netflix rn
-    private static final String apiKey = "GET-AN-API-KEY";
+    private static final String baseApiUrl = "https://streaming-availability.p.rapidapi.com/search/basic?country=us&service=netflix&type=movie&genre=18&page=1&output_language=en&language=en"; //Just searching netflix rn
+    private static final String apiKey = "87d2ffd533msh44188d25d496f68p13a53bjsn3131b3909eae";
 
 
     public static String searchMovies(String input) {
@@ -25,6 +25,7 @@ public class MovieAPI {
         String url = urlBuilder.build().toString();
 
         return getResponse(url);
+
     }
 
     private static String getResponse(String url) {
