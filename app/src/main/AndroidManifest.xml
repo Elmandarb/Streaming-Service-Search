@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StreamingServiceSearch">
         <activity
+            android:name=".SuggestionsActivity"
+            android:exported="true" />
+        <activity
             android:name=".Homepage"
             android:exported="true" />
         <activity
@@ -22,9 +25,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SearchActivity"
+        <activity
+            android:name=".SearchActivity"
             android:exported="true" />
-        <activity android:name=".ResultsActivity"
+        <activity
+            android:name=".ResultsActivity"
             android:exported="true" />
     </application>
 

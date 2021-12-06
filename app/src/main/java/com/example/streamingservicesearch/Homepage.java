@@ -12,7 +12,7 @@ public class Homepage extends AppCompatActivity {
 
     //private Button randomButton;
     private Button searchButton;
-    //private Button suggestionButton;
+    private Button suggestionButton;
     //private Button historyButton;
 
     @Override
@@ -41,14 +41,15 @@ public class Homepage extends AppCompatActivity {
         });
 
 
-        /*suggestionButton = findViewById(R.id.suggestion_button);
+        suggestionButton = findViewById(R.id.suggestion_button);
         suggestionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent sugIntent = new Intent(Homepage.this, suggestion.class);
+                Intent sugIntent = new Intent(Homepage.this, SuggestionsActivity.class);
                 startActivity(sugIntent);
             }
         });
+        /*
         historyButton = findViewById(R.id.history_button);
         historyButton.setOnClickListener(new View.OnClickListener() {
             @Override
