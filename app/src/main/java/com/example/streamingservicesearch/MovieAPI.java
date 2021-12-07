@@ -8,7 +8,7 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 public class MovieAPI {
-    private static final String baseApiUrl = "https://streaming-availability.p.rapidapi.com/search/basic?country=us&service=netflix&type=movie&genre=18&page=1&output_language=en&language=en"; //Just searching netflix rn
+    private static final String baseApiUrl = "https://streaming-availability.p.rapidapi.com/search/basic?country=us&service=netflix&type=movie&output_language=en&language=en"; //Just searching netflix rn
     private static final String apiKey = "87d2ffd533msh44188d25d496f68p13a53bjsn3131b3909eae";
 
 
@@ -19,7 +19,7 @@ public class MovieAPI {
 
         // and adding on a few more parts
         urlBuilder.addQueryParameter("apiKey", apiKey);
-        urlBuilder.addQueryParameter("title", input);
+        urlBuilder.addQueryParameter("imdb_id", input);
 
         // until it's ready to assemble
         String url = urlBuilder.build().toString();
@@ -35,7 +35,7 @@ public class MovieAPI {
         OkHttpClient client = new OkHttpClient();
         try {
             // ask the server for a response
-            Response response = client.newCall(request).execute();
+            Response response = client.newCall(request).execute(); //Crashing here for some reason
             // `response` also contains metadata: success/fail, travel time, etc.
             // only need the body of the result (as a string)
             return response.body().string();

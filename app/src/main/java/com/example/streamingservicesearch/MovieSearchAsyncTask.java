@@ -24,11 +24,10 @@ public class MovieSearchAsyncTask extends AsyncTask<String, Void, List<MovieMode
     // instance of a RecipeListener (concrete implementation)
     private MovieListener listener;
 
-    // setter
+    // setters
     public void setListener(MovieListener listener) {
         this.listener = listener;
     }
-
 
     @Override
     protected List<MovieModel> doInBackground(String... params) {

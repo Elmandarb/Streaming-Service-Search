@@ -14,7 +14,7 @@ import com.example.streamingservicesearch.MovieSearchAsyncTask;
 
 public class ResultsActivity extends AppCompatActivity {
 
-    public static final String SEARCH_KEY = "SEARCH";
+    public static String SEARCH_KEY = "SEARCH_TEST";
     TextView searchResultsText;
     TextView movieDescription;
     @Override
@@ -40,7 +40,7 @@ public class ResultsActivity extends AppCompatActivity {
                 movieDescription.setText(response.getDescription());
             }
         });
-        task.execute(SEARCH_KEY); //How do I give my MovieSearchAsyncTask the name?
+        task.execute(SEARCH_KEY);
 
         Button returnButton = findViewById(R.id.return_button);
         returnButton.setOnClickListener(new View.OnClickListener() {
